@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
 import slugify from 'slugify';
-
 import './App.css';
 
 // This object will allow us to
@@ -42,6 +41,7 @@ class App extends Component {
       selected
     });
   };
+
 
   render() {
     const features = Object.keys(this.props.features).map((feature, idx) => {
