@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import FeatureOption from "./FeatureOption";
+import FeatureName from "./FeatureName";
 
 export default class Features extends Component {
   render() {
@@ -8,9 +9,12 @@ export default class Features extends Component {
 
       return (
         <fieldset className="feature" key={featureHash}>
-          <legend className="feature__name">
+          {/* <legend className="feature__name">
             <h3>{feature}</h3>
-          </legend>
+          </legend> */}
+          <FeatureName 
+          feature={feature}
+          />
 
           <FeatureOption
             USCurrencyFormat={this.props.USCurrencyFormat}
